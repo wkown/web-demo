@@ -1,0 +1,115 @@
+/* 代码整理：懒人之家 www.lanrenzhijia.com */
+* {
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	font: 13px Arial, serif;
+	line-height: 1.5em;
+	color:#000;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
+}
+article, aside, figure, footer, header, nav, section {
+	display: block;
+}
+.group:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+.group {
+	display: inline-block;
+	clear: both;
+}
+ * html .group {
+	height: 1%;
+}
+.group {
+	display: block;
+}
+a img {
+	border:0;
+}
+.clearBoth {
+	clear:both;
+	margin:0;
+	padding:0;
+}
+#buynow {
+	position:absolute;
+	top:0px;
+	right:10px;
+	z-index:1000;
+}
+#downloadsgif {
+	position:absolute;
+	top:3px;
+	left:50%;
+	z-index:1000;
+	margin-left:-75px;
+}
+#page-wrap {
+	width:100%;
+	margin: 0 auto;
+}
+#banner-div-thumbs {
+	height:550px;
+	clear:both;
+}
+#banner-div-rotator {
+	height:500px;
+	clear:both;
+}
+#banner-div-rotator-universal {
+	height:530px;
+	clear:both;
+}
+#banner-div-rotator-attractive {
+	height:540px;
+	clear:both;
+}
+#banner-div-playlist {
+	height:500px;
+	clear:both;
+}
+#banner-div-playlist-elegant {
+	height:530px;
+	clear:both;
+}
+#banner-div-playlist-easy {
+	height:600px;
+	clear:both;
+}
+#banner-div-contentSlider {
+	height:590px;
+	clear:both;
+}
+/* 代码整理：懒人之家 www.lanrenzhijia.com */
+#banner-div-contentSlider-surprise {
+	height:520px;
+	clear:both;
+}
+#banner-div-contentSlider-imposing {
+	height:600px;
+	clear:both;
+}
+#banner-div-contentSlider-charming {
+	height:480px;
+	clear:both;
+}
+#zzz {
+	xtext-align:left;
+	xpadding:50px 0 0 0;
+	xbackground:#0F3;
+}
+.generalWidth {
+	width:998px;
+	margin: 0 auto;
+}
+/* 代码整理：懒人之家 www.lanrenzhijia.com */

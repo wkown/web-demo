@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* 代码整理：懒人之家 www.lanrenzhijia.com */
+#cqh-box {
+	background-color:#069;
+	position:relative;
+	border:1px solid #999;
+	overflow:hidden;
+	margin:0 auto;
+}
+#cqh-box ul {
+	margin:0;
+	padding:0;
+}
+#cqh-box li {
+	margin:0;
+	padding:0;
+	list-style:none;
+	float:left;
+}
+#cqh-box img {
+	border:none;
+}
+#cqh-num {
+	width:100%;
+	height:16px;
+	float:right;
+	position:absolute;
+	right:0px;
+	bottom:4px;
+}
+#cqh-num span {
+	display:inline-block;
+	float:left;
+	width:12px;
+	height:14px;
+	border:1px solid #C66;
+	background-color:#C60;
+	color:#FFF;
+	line-height:14px;
+	text-align:center;
+	cursor:pointer;
+	margin:0 3px;
+	font-size:11px;
+}
+#cqh-num span.this {
+	background-color:#FC0;
+	color:#F00;
+}
+/* 代码整理：懒人之家 www.lanrenzhijia.com */

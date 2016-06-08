@@ -1,0 +1,425 @@
+/* 代码整理：懒人之家 www.lanrenzhijia.com */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:15px;
+	line-height:21px;
+	color:#78808B;
+	padding-bottom:145px;
+	text-shadow:1px 1px #fff;
+	background-color: #F1F3F6;
+}
+/* COMMON */
+.container {
+	width:880px;
+	margin:0 auto;
+	position:relative;
+	padding-left:80px;
+}
+.clear {
+	clear:both;
+}
+.hidden {
+	display:none;
+}
+.content_title {
+	border-bottom:1px solid #E3E5E8;
+	color:#45525F;
+	font-size:35px;
+	font-weight:normal;
+	padding:20px 0;
+	line-height:30px;
+	text-shadow:none;
+}
+.button {
+	display:inline-block;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size:20px;
+	text-decoration:none;
+	padding:5px 15px;
+repeat-x left -250px;
+	background: rgba(70, 83, 99, 0.2);
+	line-height:25px;
+	font-style:normal;
+	text-shadow:none;
+	color:#465363;
+-webkit-transition: all .2s linear;
+-moz-transition: all .2s linear;
+transition: all .2s linear;
+}
+.button:hover {
+	color:#fff;
+	background:#465363;
+}
+/* HOMEPAGE */
+#lanrenzhijia {
+	background:url(../img/bg_dark2.png);
+	margin-bottom:0;
+	height:240px;
+}
+#lanrenzhijia .container {
+	height:240px;
+}
+#lanrenzhijia_container {
+	position:absolute;
+	right:0;
+	top:-45px;
+	width:595px;
+	height:285px;
+}
+#lanrenzhijia .list {
+	position:absolute;
+	left:65px;
+	top:15px;
+	width:320px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+#lanrenzhijia .list li {
+	height:40px;
+	text-shadow:0 1px #fff;
+	font-weight:bold;
+	margin-bottom:2px;
+}
+#lanrenzhijia .list li a {
+	display:block;
+	padding:10px 20px;
+	color:#818B97;
+	line-height:20px;
+	font-size:15px;
+	background:none;
+	background: rgba(70, 83, 99, 0);
+	text-shadow:0 1px #fff;
+}
+#lanrenzhijia .list li.active a, #lanrenzhijia .list li a:hover {
+	background: rgba(70, 83, 99, 0.15);
+	background-color:#D6D9DF
+}
+#lanrenzhijia .list li.active a {
+	color:#465363;
+}
+#lanrenzhijia .link_portfolio {
+	position:absolute;
+	bottom:0;
+	left:65px;
+}
+#lanrenzhijia .work {
+	display:none;
+	position:absolute;
+	right:0;
+	bottom:0;
+	width:595px;
+	height:285px;
+}
+#lanrenzhijia .work.active {
+	display:block;
+}
+#lanrenzhijia .work .images {
+	width:440px;
+	position:absolute;
+	bottom:1px;
+	left:0;
+	height:284px;
+	overflow:hidden;
+	filter: 0 !important;
+}
+#lanrenzhijia .work .images li {
+	padding-left:11px;
+	overflow:hidden;
+	filter: 0 !important;
+}
+#lanrenzhijia .work .images li a {
+	display:inline-block;
+	padding-right:10px;
+	filter: 0 !important;
+}
+#lanrenzhijia .work .images li.left {
+	position:absolute;
+	bottom:0;
+	left:0;
+	z-index:10;
+	height:284px;
+	width:265px;
+}
+#lanrenzhijia .work .images li.center {
+	position:absolute;
+	bottom:0;
+	left:120px;
+	z-index:5;
+	width:240px;
+	height:256px;
+}
+#lanrenzhijia .work .images li.right {
+	position:absolute;
+	bottom:0;
+	right:0;
+	z-index:2;
+	width:215px;
+	height:228px;
+}
+#lanrenzhijia .work .images li a img {
+	width:100%;
+}
+#lanrenzhijia .work .description {
+	width:135px;
+	position:absolute;
+	top:60px;
+	right:0;
+	height:165px;
+	overflow:hidden;
+	padding:20px 0;
+	line-height:18px;
+	font-size:14px;
+}
+#lanrenzhijia .work .description p {
+	margin-bottom:15px;
+}
+/*#lanrenzhijia .work .quote {position:absolute;bottom:0;left:0;z-index:100;padding-bottom:11px;width:100%;background:url(../img/shadow_so.png) no-repeat left bottom;color:#979FAA;font-style:italic;}
+#lanrenzhijia .work .quote blockquote {width:555px;height:35px;background:#fff;padding:5px 20px;line-height:35px;}*/
+#lanrenzhijia .work.active {
+	display:block;
+}
+#lanrenzhijia .work .simple_link {
+	color: #666666;
+	text-decoration: none;
+	font-family: "宋体";
+	font-size: 14px;
+}
+#lanrenzhijia .work a.simple_link:hover {
+	color: #333333;
+	text-decoration: underline;
+}
+#callout_process {
+	float:left;
+	width:100%;
+	margin-bottom:30px;
+	border-top:1px solid #E3E5E8;
+	padding-top:80px;
+}
+#callout_process .text {
+	float:left;
+	width:195px;
+}
+#callout_process .text .description {
+	font-style:italic;
+}
+#callout_process .text .description p {
+	margin-bottom:14px;
+}
+#callout_process ul {
+	width:660px;
+	float:right;
+	height:189px;
+	position:relative;
+	border-bottom:1px solid #E3E5E8;
+}
+#callout_process li {
+	font-family:Arial, Helvetica, sans-serif;
+	float:left;
+	line-height:16px;
+	color:#979FAA;
+	text-align:center;
+	width:132px;
+	height:200px;
+	cursor:pointer;
+	font-weight:bold;
+}
+#callout_process li a {
+	position:relative;
+	z-index:10;
+	color:#818B97;
+	text-decoration:none;
+	display:block;
+	height:189px;
+	padding:0 20px;
+	cursor:auto;
+}
+#callout_process li.active a {
+	color:#45525F;
+}
+#callout_process li span {
+	display:block;
+	position:absolute;
+	left:0;
+	top:0;
+	width:660px;
+	height:189px;
+	opacity:0;
+}
+#callout_process li.active span {
+	opacity:1;
+}
+#callout_hotel {
+	float:left;
+	width:570px;
+	border-top:1px solid #E3E5E8;
+	padding-top:60px;
+	height:360px;
+	position:relative;
+}
+#callout_hotel .text {
+	float:left;
+	width:164px;
+}
+#callout_hotel .text .title {
+	font-size:15px;
+	line-height:28px;
+	font-weight:normal;
+	font-style:italic;
+	color:#45525f;
+	margin-bottom:10px;
+}
+#callout_hotel .text .title strong {
+	display:block;
+	font-style:normal;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:25px;
+	text-shadow:none;
+}
+#callout_hotel .text .description {
+	margin-bottom:14px;
+	font-style:italic;
+}
+#callout_hotel .link {
+	position:absolute !important;
+	bottom:0;
+	left:-15px;
+}
+#callout_hotel .link .text {
+	width:auto !important;
+}
+#callout_hotel .list {
+	position:absolute;
+	right:0;
+	top:52px;
+	width:260px;
+	padding-left:120px;
+	background:url(../img/building.png) no-repeat left top;
+	height:384px;
+	padding-top:8px;
+}
+#callout_hotel .list li {
+	padding:12px 15px 12px 45px;
+	font-style:italic;
+	line-height:20px;
+	margin-bottom:1px;
+}
+#callout_hotel .list li.active {
+	color:#45525f;
+}
+#callout_hotel .list li .title {
+	color:#818B97;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	margin-bottom:4px;
+}
+#callout_hotel .list li.active .title {
+	color:#45525F;
+}
+#callout_hotel .list li .building_image {
+	background-repeat:no-repeat;
+	background-position:left top;
+	position:absolute;
+	background-color:transparent;
+	cursor:auto;
+}
+#callout_hotel .list li.step_1 .building_image {
+	width:65px;
+	height:193px;
+	top:0 !important;
+	left:22px !important;
+}
+#callout_hotel .list li.step_2 .building_image {
+	width:81px;
+	height:73px;
+	top:162px !important;
+	left:14px !important;
+}
+#callout_hotel .list li.step_3 .building_image {
+	width:95px;
+	height:96px;
+	top:199px !important;
+	left:7px !important;
+}
+#callout_hotel .list li.step_4 .building_image {
+	width:109px;
+	height:136px;
+	bottom:0 !important;
+	left:0 !important;
+	top:auto !important;
+}
+#callout_logbook {
+	float:right;
+	width:250px;
+	border-top:1px solid #E3E5E8;
+	padding-top:60px;
+}
+#callout_logbook .post {
+	padding-bottom:10px;
+	margin:20px 0 15px;
+}
+#callout_logbook .post .content {
+	padding:20px;
+	min-height:25px;
+	position:relative;
+	padding-top:75px;
+	padding-bottom:30px;
+}
+#callout_logbook .post .content .post_title {
+	max-height:100px;
+	color:#45525f;
+	font-size:20px;
+	line-height:26px;
+	font-style:italic;
+	width:190px;
+}
+#callout_logbook .post .content .post_title a {
+	color:#45525f;
+	text-decoration:none;
+	display:block;
+}
+#callout_logbook .post .content .data {
+	position:absolute;
+	left:20px;
+	top:23px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#979FAA;
+	font-size:14px;
+}
+/* 代码整理：懒人之家 www.lanrenzhijia.com */

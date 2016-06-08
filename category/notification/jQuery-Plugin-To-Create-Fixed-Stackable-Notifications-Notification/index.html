@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Notification Demos</title>
+
+    <link rel="stylesheet" href="css/jquery.notification.css">
+</head>
+<body>
+<h1>jQuery Notification Demos</h1>
+    <select id="type">
+      <option value="success">success</option>
+        <option value="info">info</option>
+        <option value="warning">warning</option>
+        <option value="error">error</option>
+    </select>
+    <label for="title">title:</label>
+    <input type="text" value="title" id="title">
+
+    <label for="content">content:</label>
+    <input type="text" id="content" value="content">
+
+    <label for="delay">delay:</label>
+    <input type="text" id="delay" value = "5000">
+
+    <button id="show-btn">Show Notification</button>
+    <script src="lib/jquery.min.js"></script>
+    <script src="js/jquery.notification.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $("#show-btn").click(function(){
+        
+                var title = $("#title").val();
+                var content = $("#content").val();
+                var type  = $("#type").val();
+                var delay  = $("#delay").val();
+
+                $.notify(title, content, type, delay);
+            
+            });
+        });
+    </script> 
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+@charset "utf-8";
+/* 代码整理：懒人之家 www.lanrenzhijia.com */
+* {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+body {
+	background:#fff;
+	font:normal 12px/22px  Arial, Helvetica, sans-serif;
+	width:100%;
+}
+img {
+	border:0;
+}
+a {
+	text-decoration:none;
+	color:#333;
+}
+a:hover {
+	color:#1974A1;
+}
+.lanrenzhijia_slider {
+	width:100%;
+	min-width:980px;
+	height:335px;
+	position:relative;
+	overflow:hidden;
+	background:#fff;
+	text-align:center;
+}
+.lanrenzhijia_slider .bd {
+	width:980px;
+	position:absolute;
+	left:50%;
+	margin-left:-490px
+}
+.lanrenzhijia_slider .bd li {
+	width:980px;
+	overflow:hidden;
+}
+.lanrenzhijia_slider .bd li img {
+	display:block;
+	width:980px;
+	height:335px;
+}
+.lanrenzhijia_slider .tempWrap {
+	overflow:visible !important
+}
+.lanrenzhijia_slider .tempWrap ul {
+	margin-left:-980px !important;
+}
+.lanrenzhijia_slider .hd {
+	position:absolute;
+	width:100%;
+	left:0;
+	z-index:1;
+	height:8px;
+	bottom:20px;
+	text-align:center;
+}
+.lanrenzhijia_slider .hd li {
+	display:inline-block;
+	*display:inline;
+	zoom:1;
+	width:8px;
+	height:8px;
+	line-height:99px;
+	overflow:hidden;
+	background:url(../images/slider-btn.png) 0 -10px no-repeat;
+	margin:0 5px;
+	cursor:pointer;
+}
+.lanrenzhijia_slider .hd li.on {
+	background-position:0 0;
+}
+.lanrenzhijia_slider .pnBtn {
+	position:absolute;
+	z-index:1;
+	top:0;
+	width:100%;
+	height:335px;
+	cursor:pointer;
+}
+.lanrenzhijia_slider .prev {
+	left:-50%;
+	margin-left:-490px;
+}
+.lanrenzhijia_slider .next {
+	left:50%;
+	margin-left:490px;
+}
+.lanrenzhijia_slider .pnBtn .blackBg {
+	display:block;
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:335px;
+	background:#000;
+	filter:alpha(opacity=50);
+	opacity:0.5;
+}
+.lanrenzhijia_slider .pnBtn .arrow {
+	display:none;
+	position:absolute;
+	top:0;
+	z-index:1;
+	width:60px;
+	height:335px;
+}
+.lanrenzhijia_slider .pnBtn .arrow:hover {
+	filter:alpha(opacity=60);
+	opacity:0.6;
+}
+.lanrenzhijia_slider .prev .arrow {
+	right:0;
+	background:url(../images/slider-arrow.png) -120px 0 no-repeat;
+}
+.lanrenzhijia_slider .next .arrow {
+	left:0;
+	background:url(../images/slider-arrow.png) 0 0 no-repeat;
+}
+/* 代码整理：懒人之家 www.lanrenzhijia.com */

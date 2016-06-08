@@ -1,0 +1,150 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="utf-8"/>
+  <title>jQuery Sticky Plugin Examples</title>
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+  <link rel="stylesheet" href="dist/jquery.sticky.min.css">
+
+  <style type="text/css">
+    .panel {
+      width: 758px;
+      margin: 100px auto;
+    }
+
+    .panel .dropdown .dropdown-menu li {
+      padding: 1px 5px;
+    }
+
+    .panel .dropdown .dropdown-menu li a {
+      border-radius: 3px;
+    }
+
+    .sticky img {
+      float: left;
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+<div class="panel panel-default">
+  <div class="panel-heading"><h4>jQuery Sticky Plugin Examples</h4>
+  </div>
+  <div class="panel-body">
+    <div class="form-horizontal">
+      <div class="form-group">
+        <label class="col-sm-3 control-label">Position:</label>
+
+        <div class="col-sm-5">
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+                    aria-expanded="true">
+              <span>top-right</span>
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li><a tabindex="-1" href="#">top-left</a></li>
+              <li><a tabindex="-1" href="#">top-mid</a></li>
+              <li class="active"><a tabindex="-1" href="#">top-right</a></li>
+              <li><a tabindex="-1" href="#">mid-left</a></li>
+              <li><a tabindex="-1" href="#">mid-mid</a></li>
+              <li><a tabindex="-1" href="#">mid-right</a></li>
+              <li><a tabindex="-1" href="#">bottom-left</a></li>
+              <li><a tabindex="-1" href="#">bottom-mid</a></li>
+              <li><a tabindex="-1" href="#">bottom-right</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-3 control-label">Use animate.css:</label>
+
+        <div class="col-sm-5">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" checked>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-3 col-sm-5">
+          <button class="btn btn-default btn-sticky">Open</button>
+          <button class="btn btn-warning btn-unsticky">Dismiss</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel-footer">
+    Licensed under the Apache License
+  </div>
+</div>
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="dist/jquery.sticky.min.js"></script>
+<script type="text/javascript">
+  $(window).ready(function(){
+    var dp = $('.dropdown');
+    dp.on('click', '.dropdown-menu li', function(){
+      var self = $(this);
+      if (self.hasClass('active')) {
+        return;
+      }
+      dp.find('.dropdown-menu li').removeClass('active');
+      self.addClass('active');
+      dp.find('button>span:eq(0)').text(self.text());
+    });
+
+    var icons = [
+      'img/noti.png',
+      'img/tip.png',
+      'img/finger.png'
+    ];
+    var bodies = [
+      'Yet another jQuery notification plugin used to display sticky, eye-catching message boxes on your website, with cool CSS3 animations based on Animate.css.',
+      'Hello there, I am jquery sticky plugin \(^o^)/~.',
+      'Licensed under the Apache License, Version 2.0, feel free to use it.'
+    ];
+
+    $('button.btn-sticky').click(function(){
+      var seed = Math.ceil(Math.random() * 100000) % 3;
+
+      $.sticky({
+        icon         : icons[seed],
+        title        : 'Notification',
+        body         : bodies[seed],
+        position     : dp.find('button>span:eq(0)').text(),
+        useAnimateCss: $('input:checkbox').get(0).checked,
+        onShown      : function(id){
+          console.log('shown', id);
+        },
+        onHidden     : function(id){
+          console.log('hidden', id);
+        }
+      });
+    });
+    $('button.btn-unsticky').click(function(){
+      $.sticky.dequeue();
+    });
+  });
+
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>

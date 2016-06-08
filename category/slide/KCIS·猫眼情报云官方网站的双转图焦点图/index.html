@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>来自KCIS·猫眼情报云官方网站的双转图焦点图</title>
+<link rel='stylesheet' href='css/lanrenzhijia.css' type='text/css' />
+<script src="js/jquery.tools.min.js" type="text/javascript"></script>
+</head>
+<body style="padding-top:20px;">
+<div class="frame clearfix gallery2-f">
+  <div class="frame-top"><em class="frame-top-l"></em><em class="frame-top-r"></em></div>
+  <div class="frame-bottom"><em class="frame-bottom-l"></em><em class="frame-bottom-r"></em></div>
+  <div class="frame-c">
+    <div class="left-box-f scrolitem">
+      <div class="items">
+        <ul>
+          <li class="o01l">
+            <div class="options-con">
+              <h3>健康指数</h3>
+              <p>通过正负面信息量、舆情总量及分布状态、媒体权重、传播覆盖人群、热点事件影响力等多种指标计算出当前的综合舆情指数，让您实时掌握舆情状态。</p>
+            </div>
+          </li>
+        </ul>
+        <ul>
+          <li class="o02l">
+            <div class="options-con">
+              <h3>数据河流 ™</h3>
+              <p>通过信息总量、正负面信息分析、信息分布媒体权重、传播覆盖人群等参数，由系统智能生成数据河流，从正反两面直观地展示了各周期内的舆情走势，易于理解与监测。</p>
+            </div>
+          </li>
+        </ul>
+        <ul>
+          <li class="o03l">
+            <div class="options-con">
+              <h3>信息监测</h3>
+              <p>通过海量信息搜集、中文分词、智能语义分析、数据挖掘等技术，24小时不间断监控成千上万的网站、论坛、博客和微博信息，及时准确掌握网络信息和传播动向，全网无遗漏。</p>
+            </div>
+          </li>
+        </ul>
+        <ul>
+          <li class="o04l">
+            <div class="options-con">
+              <h3>传播路径</h3>
+              <p>清晰呈现每一天的信息传播路径，在每一天的节点上，罗列相关媒体。让您对信息的发展、扩散一目了然。</p>
+            </div>
+          </li>
+        </ul>
+        <ul>
+          <li class="o05l">
+            <div class="options-con">
+              <h3>关键语义图</h3>
+              <p>通过对用户发布的信息进行“内容分析”，以形象生动的图表图像，全面展示精华信息，让您对口碑舆论一手掌握。</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="right-box-f scrolitem2">
+      <div class="items">
+        <ul>
+          <li class="o01r">
+            <div class="options-con">
+              <h3>分析师预警</h3>
+              <p>在系统智能计算基础上，由专业分析师筛选过滤全网信息，提供人工判断分析、针对性推荐和预警点评，在线推送，聚焦精准。</p>
+            </div>
+          </li>
+        </ul>
+        <ul>
+          <li class="o02r">
+            <div class="options-con">
+              <h3>信息统计分析</h3>
+              <p>根据新闻资讯、论坛博客、微博等信息类别进行分类统计和环比统计；还可根据各个信源采集的相关信息量，进行排名统计。</p>
+            </div>
+          </li>
+        </ul>
+        <ul>
+          <li class="o03r">
+            <div class="options-con">
+              <h3>信息筛选</h3>
+              <p>经过强大的用户自助筛选功能，通过各种对信源、时间、区域、类型等条件规则的自定义组合，帮助您实现相关信息有针对性的全网监测。并且还能将条件保存为自定义分类，以便随时分类查询。</p>
+            </div>
+          </li>
+        </ul>
+        <ul>
+          <li class="o04r">
+            <div class="options-con">
+              <h3>传播等高线</h3>
+              <p>根据信息受关注的权重，呈现传播影响力变化趋势。当发展曲线越靠近圆心，则说明信息的受关注权重越高，越值得此时引起重视。</p>
+            </div>
+          </li>
+        </ul>
+        <ul>
+          <li class="o05r">
+            <div class="options-con">
+              <h3>数据报告</h3>
+              <p>自助数据报告，系统自助生成各种自定义数据报表，提供在线修改和打印服务。</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="center-line"></div>
+  </div>
+  <div class="navi2"><a class="active"></a><a></a><a></a><a></a><a></a></div>
+</div>
+</body>
+<script type="text/javascript">
+function goNext(){
+	var scrolls = $('.scrolitem').scrollable(); if(scrolls.getIndex() == (scrolls.getSize()-1)){ scrolls.seekTo(0); }else{ scrolls.next(); }
+	var scrolls2 = $('.scrolitem2').scrollable(); if(scrolls2.getIndex() == (scrolls2.getSize()-1)){ scrolls2.seekTo(0); }else{ scrolls2.next(); }
+}
+var timer1 = setInterval('goNext()',8000);
+//jquery反应区
+$(document).ready(function(){
+	var scrollable = $('.scrolitem').scrollable().navigator({navi:'.navi2'});
+	var scrollable2 = $('.scrolitem2').scrollable().navigator({navi:'.navi2'});
+	$('.navi2').hover(function(){clearInterval(timer1);}, function(){timer1=setInterval('goNext()',8000);});
+
+});
+</script>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>底部缩略图多种不同切换效果幻灯片</title>
+<link href="css/lanrenzhijia.css" type="text/css" rel="stylesheet" />
+<link href="css/banner.css" type="text/css" rel="stylesheet" />
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/allinone_thumbnailsBanner.js"></script>
+<script>
+	$(function() {
+		$('#allinone_thumbnailsBanner').allinone_thumbnailsBanner({
+			skin: 'cool',
+			numberOfThumbsPerScreen:7,
+			width: 960,
+			height: 384,
+			thumbsReflection:0,
+			defaultEffect: 'random'
+		});		
+		
+	});
+</script>
+</head>
+
+<body>
+<div id="banner-div-thumbs">
+  <div id="zzz" style="width:960px;margin: 0 auto; padding:10px 0 0 0;"> 
+    <!------------------------------------------------------------------------------------>
+    <div style="width:960px; height:400px; margin:50px auto 0 auto;">
+      <div id="allinone_thumbnailsBanner" style="display:none;">
+        <ul class="allinone_thumbnailsBanner_list">
+          <!-- IMAGES -->
+          <li data-bottom-thumb="images/thumbs/01.jpg" data-text-id="#allinone_thumbnailsBanner_photoText1">
+          <img src="images/photo/1.jpg" alt="" />
+          </li>
+          <li data-bottom-thumb="images/thumbs/02.jpg" data-text-id="#allinone_thumbnailsBanner_photoText2">
+          <img src="images/photo/2.jpg" alt="" />
+          </li>
+          <li data-bottom-thumb="images/thumbs/03.jpg" data-text-id="#allinone_thumbnailsBanner_photoText3">
+          <img src="images/photo/3.jpg" alt="" />
+          </li>
+          <li data-bottom-thumb="images/thumbs/04.jpg" data-text-id="#allinone_thumbnailsBanner_photoText4">
+          <img src="images/photo/4.jpg" alt="" />
+          </li>
+          <li data-bottom-thumb="images/thumbs/05.jpg" data-text-id="#allinone_thumbnailsBanner_photoText5">
+          <img src="images/photo/5.jpg" alt="" />
+          </li>
+          <li data-bottom-thumb="images/thumbs/01.jpg" data-text-id="#allinone_thumbnailsBanner_photoText1">
+          <img src="images/photo/1.jpg" alt="" />
+          </li>
+          <li data-bottom-thumb="images/thumbs/02.jpg" data-text-id="#allinone_thumbnailsBanner_photoText2">
+          <img src="images/photo/2.jpg" alt="" />
+          </li>
+          <li data-bottom-thumb="images/thumbs/03.jpg" data-text-id="#allinone_thumbnailsBanner_photoText3">
+          <img src="images/photo/3.jpg" alt="" />
+          </li>
+          <li data-bottom-thumb="images/thumbs/04.jpg" data-text-id="#allinone_thumbnailsBanner_photoText4">
+          <img src="images/photo/4.jpg" alt="" />
+          </li>
+          <li data-bottom-thumb="images/thumbs/05.jpg" data-text-id="#allinone_thumbnailsBanner_photoText5">
+          <img src="images/photo/5.jpg" alt="" />
+          </li>
+          <li data-bottom-thumb="images/thumbs/01.jpg" data-text-id="#allinone_thumbnailsBanner_photoText1">
+          <img src="images/photo/1.jpg" alt="" />
+          </li>
+          <li data-bottom-thumb="images/thumbs/02.jpg" data-text-id="#allinone_thumbnailsBanner_photoText2">
+          <img src="images/photo/2.jpg" alt="" />
+          </li>
+          <li data-bottom-thumb="images/thumbs/03.jpg" data-text-id="#allinone_thumbnailsBanner_photoText3">
+          <img src="images/photo/3.jpg" alt="" />
+          </li>
+          <li data-bottom-thumb="images/thumbs/04.jpg" data-text-id="#allinone_thumbnailsBanner_photoText4">
+          <img src="images/photo/4.jpg" alt="" />
+          </li>
+          <li data-bottom-thumb="images/thumbs/05.jpg" data-text-id="#allinone_thumbnailsBanner_photoText5">
+          <img src="images/photo/5.jpg" alt="" />
+          </li>
+          <li data-bottom-thumb="images/thumbs/01.jpg" data-text-id="#allinone_thumbnailsBanner_photoText1">
+          <img src="images/photo/1.jpg" alt="" />
+          </li>
+          <li data-bottom-thumb="images/thumbs/02.jpg" data-text-id="#allinone_thumbnailsBanner_photoText2">
+          <img src="images/photo/2.jpg" alt="" />
+          </li>
+          <li data-bottom-thumb="images/thumbs/03.jpg" data-text-id="#allinone_thumbnailsBanner_photoText3">
+          <img src="images/photo/3.jpg" alt="" />
+          </li>
+          <li data-bottom-thumb="images/thumbs/04.jpg" data-text-id="#allinone_thumbnailsBanner_photoText4">
+          <img src="images/photo/4.jpg" alt="" />
+          </li>
+          <li data-bottom-thumb="images/thumbs/05.jpg" data-text-id="#allinone_thumbnailsBanner_photoText5">
+          <img src="images/photo/5.jpg" alt="" />
+          </li>
+          <li data-bottom-thumb="images/thumbs/02.jpg" data-text-id="#allinone_thumbnailsBanner_photoText2">
+          <img src="images/photo/2.jpg" alt="" />
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-------------------------------------------------------------------------------------> 
+  </div>
+</div>
+<script charset="utf-8">
+  $(document).ready(function(){
+    $("a[rel^='prettyPhoto']").prettyPhoto({
+		opacity: 0.9
+	});
+  });
+</script> 
+<script>  
+    jQuery(document).ready(function($)
+    {  
+        jQuery('#floatdiv').addFloating(  
+            {  
+                targetLeft: 0,  
+                targetBottom: 20,  
+                snap: true  
+            }); 
+			 
+    });
+</script>
+</body>
+</html>

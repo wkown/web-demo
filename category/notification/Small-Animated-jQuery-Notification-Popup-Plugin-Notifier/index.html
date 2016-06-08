@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jQuery Notifier Plugin Demos</title>
+<link href='http://fonts.googleapis.com/css?family=roboto:300,400,700' rel='stylesheet' type='text/css'>
+<link href="css/notifier.css" rel="stylesheet" type="text/css">
+<style>
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body{
+		font-family: 'roboto', sans-serif;
+		color: #fff;
+		font-size: 13px;
+		background-color: #34495e;
+	}
+    .container { max-width:960px; margin:150px auto;}
+    h1 { font-size:32px; margin:20px auto}
+</style>
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+</head>
+
+<body><div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<li><a href="http://www.jqueryscript.net/">Download This Plugin</a></li>
+<li><a href="http://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+</ul>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+<div class="container">
+<h1>jQuery Notifier Plugin</h1>
+<h1>Demos:</h1>
+<p><button class="demo-1 btn btn-danger">Error</button>
+</p>
+<p><button class="demo-2 btn btn-danger">Success</button>
+</p>
+<p><button class="demo-3 btn btn-danger">Default</button>
+</p>
+<p><button class="demo-4 btn btn-danger">Default</button>
+</p>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+<script src="js/notifier.js"></script>
+<script>
+(function($){
+  $('.demo-1').click(function(event) {
+    $.notifier({"type": "error",
+    "positionY": "bottom",
+    "positionX": "left"
+    });
+  });
+  
+  $('.demo-2').click(function(event) {
+    $.notifier({"type": "success",
+    "positionY": "bottom",
+	 "animationIn" : 'bounce',
+        "animationOut" : 'drop',
+    "positionX": "left"
+    });
+  });
+  
+  $('.demo-3').click(function(event) {
+    $.notifier({"type": "warning",
+    "positionY": "bottom",
+	
+    "positionX": "left",
+		 "animationIn" : 'highlight',
+        "animationOut" : 'blind'
+    });
+  });
+  
+  $('.demo-4').click(function(event) {
+    $.notifier({"type": "info",
+    "positionY": "bottom",
+		 "animationIn" : 'slide',
+        "animationOut" : 'fade',
+    "positionX": "left"
+    });
+  });
+})(jQuery);
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>

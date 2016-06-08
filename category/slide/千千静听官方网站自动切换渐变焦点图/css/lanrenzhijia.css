@@ -1,0 +1,136 @@
+@charset "utf-8";
+/* 代码整理：懒人之家 www.lanrenzhijia.com */
+* {
+	margin:0;
+	padding:0;
+}
+body {
+	text-align:center;
+}
+ul, li {
+	list-style:none;
+}
+img {
+	border:none;
+}
+.main {
+	width:950px;
+	height:auto;
+	padding:0px 15px;
+	margin:0 auto;
+}
+#ttSwitch {
+	position:relative;
+	background:#000;
+	height:433px;
+	width:100%;
+	overflow:hidden;
+}
+#ttSwitch .main {
+	position:relative;
+}
+#ttSwitch .main #ttSwitch_btn {
+	position:absolute;
+	left:69px;
+	top:72px;
+	width:292px;
+	height:334px;
+	background:url(../images/banner_7_0_2_1.png) no-repeat;
+	z-index:10;
+}
+#ttSwitch .main #ttSwitch_btn a {
+	float:left;
+	width:201px;
+	height:62px;
+	margin-left:4px;
+	margin-top:268px;
+}
+#ttSwitch .main #ttSwitch_text {
+	position:absolute;
+	left:69px;
+	top:273px;
+	width:281px;
+	height:51px;
+	z-index:15;
+}
+#ttSwitch .main #ttSwitch_text.text_1 {
+	background:url(../images/banner_7.0_2_2.png) no-repeat;
+}
+#ttSwitch .main #ttSwitch_text.text_2 {
+	background:url(../images/banner_7.0_3_2.png) no-repeat;
+}
+#ttSwitch .main #ttSwitch_content {
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:5;
+	width:260%;
+	z-index:2;
+}
+#ttSwitch .main #ttSwitch_content .content {
+	position:absolute;
+	left:0;
+	top:0;
+	float:left;
+	width:1022px;
+	height:433px;
+	background:url(../images/banner_7.0_2.jpg) no-repeat;
+	opacity:0;
+	filter:alpha(opacity=0);
+}
+#ttSwitch .main #ttSwitch_content .content_1 {
+	background:url(../images/banner_7.0_2.jpg) no-repeat;
+	width:1022px;
+	opacity:1;
+	filter:alpha(opacity=100);
+}
+#ttSwitch .main #ttSwitch_content .content_2 {
+	background:url(../images/banner_7.0_3.jpg) no-repeat;
+}
+/*-- --*/
+.indexBanner {
+	height:36px;
+	width:100%;
+	background:#f1f1f1;
+	overflow:hidden;
+}
+.indexBanner span {
+	display:inline-block;
+	height:36px;
+	line-height:36px;
+	line-height:38px\9;
+	font-size:15px;
+	color:#454545;
+	font-weight:bold;
+	margin-left:9px;
+}
+.indexBanner a {
+	float:right;
+	margin:6px;
+	width:81px;
+	padding-top:5px;
+	height:18px;
+	border:1px solid #d1d1d1;
++margin-top:-31px;
+	_margin-top:-32px;
+	background:url(../images/btn_7.jpg) repeat-x;
+}
+.indexBanner a i {
+	display:inline-block;
+	width:8px;
+	height:12px;
+	overflow:hidden;
+	margin: 0 5px;
+	vertical-align:-2px;
++vertical-align:0px;
+	background:url(../images/btn_8.jpg) no-repeat;
+}
+.indexBanner a:hover {
+	background-position:0 -23px;
+	color:#fff;
+	border:1px solid #2d82eb;
+}
+.indexBanner a:hover i {
+	background-position:-8px 0;
+}
+/* 代码整理：懒人之家 www.lanrenzhijia.com */

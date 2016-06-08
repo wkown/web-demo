@@ -1,0 +1,257 @@
+/* 代码整理：懒人之家 www.lanrenzhijia.com */
+* {
+	margin: 0;
+	padding:0;
+	word-wrap:break-word;
+}
+html, body {
+	height:100%;
+}
+body {
+	font: 14px/24px HelveticaLTStdLight, sans-serif;
+	color:#444444;
+}
+a {
+	border:none;
+	outline:none;
+	text-decoration:none;
+	color:#444444
+}
+a:active, a:hover {
+	color:#1275ba
+}
+a.active {
+	color:#1275ba
+}
+img {
+	border:none
+}
+textarea:focus, input:focus, select:focus {
+	outline: none;
+}
+h1, h2, h3, h4, h5, h6, td, caption {
+	font-weight:normal;
+}
+th, td {
+	text-align: left;
+	vertical-align: top;
+}
+ul, ol {
+	list-style-position:inside
+}
+.clear {
+	clear:both
+}
+.hide {
+	display:none
+}
+.elastic {
+	display:block;
+	width:960px;
+	margin:0 auto;
+	position:relative;
+}
+.center {
+	text-align:center
+}
+.left {
+	float:left
+}
+.right {
+	float:right;
+}
+.space {
+	line-height:15px;
+}
+.space5 {
+	line-height:5px
+}
+.space10 {
+	line-height:10px
+}
+.space20 {
+	line-height:20px
+}
+.space25 {
+	line-height: 25px
+}
+.space30 {
+	line-height:30px
+}
+.space35 {
+	line-height:35px
+}
+.space40 {
+	line-height:40px;
+}
+.space45 {
+	line-height:45px
+}
+.space50 {
+	line-height:50px
+}
+.textM {
+	margin:10px
+}
+.textP {
+	padding:10px
+}
+.strong {
+	font-weight:bold
+}
+div#allslider {
+	display:block;
+	position:relative;
+}
+div.bg-wood {
+	display:block;
+	width:100%;
+	height:309px;
+	background:url(../images/bg-wood.jpg);
+	position:absolute;
+	top:40px;
+	left:0
+}
+div#slider {
+	display:block;
+	width:960px;
+	height:535px;
+	margin-bottom:30px;
+	background:#fff url(../images/ajax-loader.gif) no-repeat center center
+}
+div.shadow-under {
+	background:url(../images/shadow_under_slider.png) no-repeat;
+	width:960px;
+	height:15px;
+	display:block;
+	margin-bottom:70px
+}
+div.categories-slider {
+	display:block;
+	position:relative;
+}
+div.categories-slider img {
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:1
+}
+div.categories-slider img.active {
+	z-index:2
+}
+div.slider-cat-description {
+	position:absolute;
+	z-index:55;
+	left:50px;
+	top:80px;
+	display:block;
+	width:555px
+}
+div.slider-cat-description h2.slider-title {
+	color:#fff;
+	font:30px HelveticaLTStdBold, sans-serif;
+}
+div.slider-cat-description p.slider-text {
+	color:#9bfb70;
+	font:20px HelveticaLTStdLight, sans-serif;
+}
+div.categories-slider div.controls {
+	display:block;
+	position:absolute;
+	z-index:20
+}
+a.circle-control {
+	display:block;
+	width:13px;
+	height:12px;
+	background:url(../images/scircle.png) no-repeat 0 100%;
+	float:left;
+	margin-right:2px
+}
+a:hover.circle-control {
+	background-position:0 0
+}
+div.inside-controls {
+	display:block;
+	margin-top:110px;
+	cursor:default !important
+}
+div.inside-controls a.active {
+	background-position:0 0
+}
+div#cat-1 div.controls {
+	background:url(../images/development.png) no-repeat 0 100%;
+	cursor:pointer;
+	width:110px;
+	height:110px;
+	left:30px;
+	top:380px
+}
+div#cat-1 div:hover.controls {
+	background-position:0 0;
+}
+div#cat-2 div.controls {
+	background:url(../images/optimization.png) no-repeat 0 100%;
+	cursor:pointer;
+	width:110px;
+	height:110px;
+	left:185px;
+	top:380px
+}
+div#cat-2 div:hover.controls {
+	background-position:0 0;
+}
+div#cat-3 div.controls {
+	background:url(../images/web.png) no-repeat 0 100%;
+	cursor:pointer;
+	width:110px;
+	height:110px;
+	left:340px;
+	top:380px
+}
+div#cat-3 div:hover.controls {
+	background-position:0 0;
+}
+div#cat-4 div.controls {
+	background:url(../images/ecommerce.png) no-repeat 0 100%;
+	cursor:pointer;
+	width:110px;
+	height:110px;
+	left:495px;
+	top:380px
+}
+div#cat-4 div:hover.controls {
+	background-position:0 0;
+}
+div#cat-5 div.controls {
+	background:url(../images/photography.png) no-repeat 0 100%;
+	cursor:pointer;
+	width:110px;
+	height:110px;
+	left:650px;
+	top:380px
+}
+div#cat-5 div:hover.controls {
+	background-position:0 0;
+}
+div#cat-6 div.controls {
+	background:url(../images/flash.png) no-repeat 0 100%;
+	cursor:pointer;
+	width:110px;
+	height:110px;
+	left:805px;
+	top:380px
+}
+div#cat-6 div:hover.controls {
+	background-position:0 0;
+}
+div.image-container {
+	position:absolute;
+	z-index:3;
+	top:0;
+	left:0;
+	display:block;
+	width:960px;
+	height:535px;
+}
+/* 代码整理：懒人之家 www.lanrenzhijia.com */

@@ -1,0 +1,351 @@
+/* 代码整理：懒人之家 www.lanrenzhijia.com */
+* html .primary {
+	height: 605px;
+}
+* html .home .primary {
+	height: 610px;
+}
+* html .intro-wrap {
+	margin-bottom: 20px;
+	padding-bottom: 0;
+}
+.intro-wrap .wrap {
+	margin-top: 0px;
+}
+.no-intro-text .intro-wrap .wrap {
+	margin-top: 0px;
+}
+#threecol_content, #twocol_content {
+	margin-top: -87px;
+}
+/* 代码整理：懒人之家 www.lanrenzhijia.com */
+.header .wrap, .utility, .utility form, .header, .footer .wrap, .primary .wrap, .copy-footer ul, .streamer, .split, .split-a, .split-b, .header-nav, #main-nav li, .nav li, .nav li a, form.subscribe, .prime, .directory-search, .breadcrumb, .feature, .feature *, .lead-date, .details, .data-tweet, .section, .filter-wrap ul, .filter-nav li, .expandable ul, .action-footer, .adjoin-header li, * html .filter li a, .filter strong span, .slide-callout, .adjoin-options li, .video-container, .expandable .clear {
+	height: 1%;
+}
+.utility li a:hover, .utility li a:focus, .breadcrumb li a:hover, .breadcrumb li a:focus {
+	color: #fff;
+	text-decoration: underline;
+}
+.breadcrumb li {
+	margin-right: 5px;
+	padding-right: 5px;
+	border-right: 1px solid #6a8cb0;
+}/* 代码整理：懒人之家 www.lanrenzhijia.com */
+.breadcrumb li a:hover, .breadcrmb li a:focus {
+	color: #6a8cb0;
+}
+.split-a .col {
+	margin-left: 2.1%;
+}
+.split-a .first {
+	margin-left: 0;
+}
+form .btn {
+	padding: 6px 3px;
+}
+.subscribe .btn {
+	width: 100px;
+}
+.directory-search p {
+	display: inline;
+	margin-bottom: 0;
+	margin-left: 9px;
+}
+.directory-search .btn {
+	width: 120px;
+}
+input, textarea {
+	border: 1px solid #c3c3c3;
+}
+.section, .main .col .section {
+	border: 1px solid #cacaca;
+}
+.sub .section .topper {
+	top: -25px;
+	left: -16px;
+	margin: 0 0 -15px;
+}
+* html .sub .section {
+	position: relative;
+	padding-top: 160px;
+}
+* html .sub .section .topper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+}/* 代码整理：懒人之家 www.lanrenzhijia.com */
+.header {
+	z-index: 10000;
+}
+.utility {
+	min-height: 37px;
+}
+* html .utility {
+	height: 37px;
+}
+.utility li.first {
+	margin-left: 10px;
+}
+#main-nav ul {
+	margin-top: 0;
+}
+* html #main-nav li.over ul {
+	display: block;
+}
+#main-nav li.over .about-harvard {
+	background-position: 0 -80px;
+}
+#main-nav li.over .admissions-aid {
+	background-position: -182px -80px;
+}
+#main-nav li.over .schools {
+	background-position: -390px -80px;
+}
+#main-nav li.over .resources-offices {
+	background-position: -504px -80px;
+}
+#main-nav li:hover ul, #main-nav li:focus ul {
+	z-index: 100;
+}
+#main-nav li .about-harvard:hover, #main-nav li .about-harvard:focus {
+	background-position: 0 -40px !important;
+}
+#main-nav li .admissions-aid:hover, #main-nav li .admissions-aid:focus {
+	background-position: -182px -40px !important;
+}
+#main-nav li .schools:hover, #main-nav li .schools:focus {
+	background-position: -390px -40px !important;
+}
+#main-nav li .resources-offices:hover, #main-nav li .resources-offices:focus {
+	background-position: -504px -40px !important;
+}
+.header-nav {
+	width: 375px;
+	margin-bottom: -24px;
+}
+#searchtext-btn {
+	font-size: 99999px;
+}
+* html .layout-a .expandable .listing {
+	background-image: url(../../G-gumeipost/images/bg-expandable-home.gif);
+}
+.video-co .play {
+	background: url(../../G-gumeipost/images/video-co.png) no-repeat center -554px;
+}
+.expandable .video-co:hover .play, .expandable .video-co:focus .play {
+	background-position: center 4px;
+}
+.media-co .btn {
+	min-height: 15px;
+}
+.link-reply {
+	top: -12px;
+}
+* html .link-reply {
+	right: 12px;
+}
+* html .block-date {
+	line-height: 1;
+}
+.filter {
+	z-index: 1000;
+	width: 275px;
+}
+.filter ul {
+	width: 275px;
+}
+.filter ul li a:hover, .filter ul li a:focus, .filter-nav a:hover, .filter-nav a:focus {
+	color: #fff;
+}
+.filter-wrap {
+	background: #919191;
+	height:42px;
+}
+.expandable {
+	clear:both;
+}
+.heading-tab .active a:hover, .heading-tab .active a:focus {
+	color: #fff;
+}
+.footer a:hover, .footer a:focus, .copy-footer a:hover, .copy-footer a:focus {
+	color: #a9a9a9;
+}/* 代码整理：懒人之家 www.lanrenzhijia.com */
+.adjunct ul, .adjunct ol {
+	margin-left: 13px;
+}
+.sub .adjunct ul, .sub .adjunct ol {
+	margin-left: 21px;
+}
+.streamer-more a {
+	font-size:1em;
+}
+.subscribe {
+	padding: 35px 16px 45px;
+}
+.more {
+	line-height: 1.4;
+}
+.listing h3 a {
+	line-height: 1.3;
+}
+* html .channel-more a {
+	background-image: url(../../G-gumeipost/images/bg-color-arrows.gif);
+}
+* html .video-co .play, * html .video-co:hover .play, * html .video-co:focus .play {
+	background: url(../../G-gumeipost/images/video-co.gif) no-repeat center 10px !important;
+	top: 40px;
+}
+* html .emergency .close {
+	background-image: url(../../G-gumeipost/images/btn-emergency-close.gif);
+}
+* html .slide-caption {
+	height: 280px;
+}/* 代码整理：懒人之家 www.lanrenzhijia.com */
+* html .slide-callout {
+	width: auto;
+}
+* html .slide-callout .more a {
+	height: 19px;
+}
+* html .lead-video h3 img {
+	top: -11px;
+}
+.adjoin-header li a {
+	padding: 7px 10px 8px;
+}
+* html .layout-b .expandable .with-image {
+	padding-right: 0;
+}
+* html .emergency h2 {
+	display: inline;
+}
+* html .load span {
+	background-image: url(../../G-gumeipost/images/bg-load.gif);
+}
+* + html .load span {
+	background-position: right 2px;
+}
+* + html .load:hover span, * + html .load:focus span {
+	background-position: right -123px;
+}
+.main .region-content p a, .main .region-content p span, .main .region-content p strong {
+	line-height:1.5em;
+}
+/*-------------------------------------------
+    Streamer
+-------------------------------------------*/
+.streamer {
+	border-bottom: 0;
+}/* 代码整理：懒人之家 www.lanrenzhijia.com */
+.streamer .heading {
+	float: left;
+}
+.heading-tab h3 {
+	right: 0;
+	font-size: 1.2em;
+}
+.streamer-social .prime {
+	width: 976px;
+}
+.streamer-find .prime {
+	width: 854px;
+}
+* html .streamer .prime {
+	border-top: 1px solid #c3c3c3;
+}
+* html .streamer-find .prime {
+	width: 850px;
+}
+.streamer .listing {
+	width: 854px;
+	border: 1px solid #c3c3c3;
+}
+.streamer-social .listing {
+	width: auto;
+	border: none;
+}
+.streamer .listing li, .streamer .listing li.first {
+	width: 180px;
+}/* 代码整理：懒人之家 www.lanrenzhijia.com */
+* html .streamer-find .prime .first {
+	width: 400px;
+}
+* html .streamer .listing li {
+	width: 178px;
+	border-top: none;
+}
+#subscribe-gazette {
+	width: 275px;
+	padding: 6px 5px 7px;
+}
+* html #subscribe-gazette {
+	width: 230px;
+}
+* html #subscribe-gazette-submit {
+	height: 33px;
+}/* 代码整理：懒人之家 www.lanrenzhijia.com */
+.carousel {
+	position:relative;
+}
+.visitors-nav-bar {
+	background:#919191;
+	border:1px solid #919191;
+}
+.webform-container-inline {
+	zoom:1;
+	display:inline;
+}
+.visitors .webform-client-form .webform-component {
+	clear:both;
+	padding-bottom:10px;
+}
+.visitors .webform-client-form .webform-component label {
+	float:left;
+	display:block;
+	padding-top:10px;
+}
+.visitors .webform-client-form .webform-component input {
+	float:left;
+	display:block;
+}/* 代码整理：懒人之家 www.lanrenzhijia.com */
+.visitors .webform-client-form .webform-component .form-type-select {
+	zoom:1;
+	display:inline;
+}
+.visitors .webform-client-form .webform-component .form-type-select label {
+	display:none;
+}
+.visitors .webform-client-form .webform-component .form-type-select select {
+	zoom:1;
+	display:inline;
+	float:none;
+	margin-right:3px;
+}
+.visitors .webform-client-form .webform-component .form-radios {
+	zoom:1;
+	display:inline;
+}
+.visitors .webform-client-form .webform-component .form-radios .form-type-radio {
+	zoom:1;
+	display:inline;
+}/* 代码整理：懒人之家 www.lanrenzhijia.com */
+.visitors .webform-client-form .webform-component .form-radios .form-type-radio input, .visitors .webform-client-form .form-radios .form-type-radio label {
+	zoom:1;
+	display:inline;
+	float:none;
+	border:none;
+	padding-top:0px;
+}
+.visitors .webform-client-form .webform-component input.webform-calendar-day-0 {
+	display:none;
+}
+.visitors #image_wrapper #text a, .visitors #image_wrapper #text a:hover {
+	color: #d6d6d6;
+}
+fieldset.captcha .fieldset-legend {
+	top:2px;
+	left:0px;
+	color: #6C6C6C;
+}
+/* 代码整理：懒人之家 www.lanrenzhijia.com */

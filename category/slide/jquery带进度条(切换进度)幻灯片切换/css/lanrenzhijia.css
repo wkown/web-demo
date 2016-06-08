@@ -1,0 +1,99 @@
+﻿/* 代码整理：懒人之家 www.lanrenzhijia.com */
+*{ margin:0; padding:0; list-style:none;}
+.index-main {
+	z-index:55;
+	position:relative;
+	width:980px;
+	margin:0 auto;
+	height:639px;
+}
+.index-main-box {
+	position:relative;
+	display:block;
+	overflow:hidden;
+	height:639px;
+}
+#indexslider {
+	position:relative;
+	width:1440px;
+	left:50%;
+	margin-left:-720px;
+	height:639px;
+}
+.index-img {
+	display:block;
+	width:1440px;
+	height:639px;
+	overflow:hidden;
+}
+.index-img img {
+	width:1440px;
+	height:639px;
+}
+.index-pagination {
+	position:absolute;
+	z-index:66;
+	top:490px;
+	left:50%;
+	height:30px;
+	width:210px;
+	margin-left:-100px;
+	text-align:center;
+}
+.index-pagination li {
+	display:inline-block;
+	width:30px;
+	position:relative;
+	float:left;
+	height:23px;
+	margin-right:4px;
+	overflow:hidden;
+}
+.index-pagination li a {
+	position:relative;
+	z-index:666;
+	display:block;
+	padding:16px 0px 5px 0px;
+	height:2px;
+	color:#5f6a72;
+	text-align:center;
+}
+.index-pagination li a div {
+	position:relative;
+	z-index:555;
+	display:block;
+	height:2px;
+	background:#c9242b;
+}
+.index-pagination li a div span {
+	position:absolute;
+	top:0px;
+	left:0px;
+	height:2px;
+	width:0px;
+	background:#FFF;
+}
+.index-pagination li a div em {
+	position:absolute;
+	display:none;
+	width:27px;
+	height:10px;
+	background:url(../images/car-ico.png) no-repeat;
+	top:-5px;
+	left:1px;
+}
+.index-pagination li.current a {
+	color:#0b4da2;
+	_color:#c9242b;
+}
+.index-pagination li.back {
+	background:url(../images/car-ico.png) no-repeat;
+	display:block;
+	position:absolute;
+	width:27px;
+	height:10px;
+	left:0px;
+	top:4px;
+	z-index:444;
+}
+/* 代码整理：懒人之家 www.lanrenzhijia.com */

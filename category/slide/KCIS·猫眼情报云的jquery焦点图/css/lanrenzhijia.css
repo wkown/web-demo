@@ -1,0 +1,360 @@
+@charset "utf-8";
+/* 代码整理：懒人之家 www.lanrenzhijia.com */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+	padding:0;
+	margin:0;
+}
+body {
+	font:14px/1.5 "Microsoft Yahei", "微软雅黑", Verdana, Arial, Helvetica, STHeiti, sans-serif;
+	margin:0;
+	padding:0;
+	color:#333333;
+	background:#f2f2f2;
+	background:url(../images/kcis_bg.png);
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset, img {
+	border:0;
+}
+img {
+	font-size:0;
+}
+address, caption, cite, code, dfn, em, strong, th, var {
+	font-weight:normal;
+	font-style:normal;
+}
+ol, ul {
+	list-style:none;
+}
+caption, th {
+	text-align:left;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight:normal;
+	font-size:100%;
+}
+q:before, q:after {
+	content:'';
+}
+abbr, acronym {
+	border:0;
+}
+/* 字体属性[定义规则，小写 "f" 加属性名称] */
+.fB {
+	font-weight:bold;
+}
+.fC {
+	font-style:italic;
+	font-family:Georgia, Constantia;
+}
+/* 字体大小[定义规则，小写 "f" 加字体大小]*/
+.f0px {
+	font-size:0px;
+}
+.f11px {
+	font-size:11px;
+}
+.f12px {
+	font-size:12px;
+}
+.f13px {
+	font-size:13px;
+}
+.f14px {
+	font-size:14px;
+}
+.f16px {
+	font-size:16px;
+}
+.f18px {
+	font-size:18px;
+}
+.lh20px {
+	line-height:20px;
+}
+.lh24px {
+	line-height:24px;
+}
+.lh26px {
+	line-height:26px;
+}
+.lh28px {
+	line-height:28px;
+}
+.con-lh1 {
+	line-height:1.7em;
+}
+.con-lh1 p {
+	margin-bottom:1em;
+}
+.margin-b0b5 {
+	margin-bottom:5px;
+}
+.margin-b1 {
+	margin-bottom:10px;
+}
+.margin-b1d5 {
+	margin-bottom:15px;
+}
+.margin-b2 {
+	margin-bottom:20px;
+}
+.margin-b4 {
+	margin-bottom:40px;
+}
+/* 浮动、清除浮动 */
+.lf {
+	float:left;
+}
+.rf {
+	float:right;
+}
+.overflow-h {
+	overflow:hidden;
+}
+.clearfix {
+	zoom:1;
+}
+.clearfix:after {
+	content:'.';
+	display:block;
+	visibility:hidden;
+	clear:both;
+	height:0;
+}
+/*内容框：圆角*/
+.frame {
+	position:relative;
+}
+.frame .frame-top, .frame .frame-top-l, .frame .frame-top-r, .frame .frame-bottom, .frame .frame-bottom-l, .frame .frame-bottom-r {
+	background:url(../images/frame_main.png) 0 0 no-repeat;
+}
+.frame .frame-c {
+	height:100%;
+	padding:0 2px;
+	background:url(../images/frames_y.png) 0 0 repeat-y;
+}
+.frame .frame-top, .frame .frame-bottom {
+	position:absolute;
+	width:100%;
+	height:9px;
+	background-repeat:repeat-x;
+}
+.frame .frame-top {
+	top:0;
+	left:0;
+	background-position:0 -25px;
+}
+.frame .frame-bottom {
+	bottom:0;
+	left:0;
+	background-position:0 -39px;
+}
+.frame .frame-top-l, .frame .frame-bottom-l, .frame .frame-top-r, .frame .frame-bottom-r {
+	float:left;
+	display:block;
+	width:9px;
+	height:9px;
+	overflow:hidden;
+}
+.frame .frame-top-r, .frame .frame-bottom-r {
+	float:right;
+}
+.frame .frame-top-l {
+	background-position:0 0;
+}
+.frame .frame-top-r {
+	background-position:-13px 0;
+}
+.frame .frame-bottom-l {
+	background-position:0 -13px;
+}
+.frame .frame-bottom-r {
+	background-position:-13px -13px;
+}
+.kcis-content-f {
+	width:984px;
+	margin:0 auto;
+}
+.title-main {
+	font-size:40px;
+	margin-bottom:30px;
+	text-shadow:#fff 0 1px 1px;
+}
+.title-desc {
+	text-align:center;
+}
+/*了解舆情*/
+.kcis-know {
+	position:relative;
+}
+#kcisKnow {
+	position:absolute;
+	width:100%;
+	height:0px;
+	left:0;
+	top:-70px;
+	font-size:0;
+}
+.kcis-know h1 {
+	padding-top:35px;
+*padding:25px 0 10px 0;
+}
+.kcis-know h1 .b-font {
+	font-size:70px;
+	line-height:40px;
+}
+.know-gallery {
+	height:500px;
+	background-color:#fff;
+	margin-bottom:35px;
+	position:relative;
+}
+.scrolitem-yuqing {
+	width:100%;
+	height:100%;
+	position:relative;
+	z-index:2;
+	overflow:hidden;
+}
+.items-yu {
+	width:20000em;
+	position:absolute;
+	clear:both;
+	z-index:3;
+}
+.items-yu .tool {
+	width:900px;
+	height:380px;
+	padding:0 40px;
+	position:relative;
+	float:left;
+}
+.items-yu .tool h1 {
+	font-size:36px;
+	color:#333;
+	font-weight:bold;
+}
+.items-yu .tool p {
+	color:#666;
+}
+.item1 {
+	background:url(../images/zhuo.png) 635px 30px no-repeat;
+}
+.item2 {
+	background:url(../images/xuan.png) 635px 30px no-repeat;
+}
+.item3 {
+	background:url(../images/xi.png) 30px 30px no-repeat;
+}
+.item4 {
+	background:url(../images/ce.png) 30px 30px no-repeat;
+}
+.item1 .itemcon {
+	width:540px;
+	overflow:hidden;
+}
+.item2 .itemcon {
+	width:578px;
+	overflow:hidden;
+}
+.item3 .itemcon {
+	width:566px;
+	overflow:hidden;
+	float:right;
+}
+.item4 .itemcon {
+	width:566px;
+	overflow:hidden;
+	float:right;
+}
+.item1 .step, .item2 .step, .item3 .step, .item4 .step {
+	position:absolute;
+	width:324px;
+	height:155px;
+	left:0;
+	top:314px;
+	background:url(../images/step.png) 0 0 no-repeat;
+}
+.item1 .step {
+	width:300px;
+	left:0;
+	background-position:-4px 0;
+}
+.item2 .step {
+	left:177px;
+	background-position:-325px 0;
+}
+.item3 .step {
+	left:424px;
+	background-position:-650px 0;
+}
+.item4 .step {
+	left:632px;
+	background-position:-975px 0;
+}
+.itemsnav-line {
+	position:absolute;
+	z-index:1;
+	width:980px;
+	height:2px;
+	top:460px;
+	background:url(../images/line_yuqing.png) center 0 no-repeat;
+}
+.itemsnav {
+	position:absolute;
+	z-index:2;
+	width:980px;
+	height:83px;
+	top:384px;
+	left:0;
+}
+#step1, #step2, #step3, #step4 {
+	position:absolute;
+	cursor:pointer;
+	display:block;
+	width:85px;
+	height:83px;
+	background:url(../images/item_step.png) 0 0 no-repeat;
+}
+#step1 {
+	top:0;
+	left:60px;
+	background-position:0 0;
+}
+#step2 {
+	top:0;
+	left:292px;
+	width:115px;
+	background-position:-115px 0;
+}
+#step3 {
+	top:0;
+	left:528px;
+	width:100px;
+	background-position:-230px 0;
+}
+#step4 {
+	top:0;
+	left:763px;
+	background-position:-345px 0;
+}
+#step1:hover {
+	background-position:0 -83px;
+}
+#step2:hover {
+	background-position:-115px -83px;
+}
+#step3:hover {
+	background-position:-230px -83px;
+}
+#step4:hover {
+	background-position:-345px -83px;
+}
+#step1.active, #step2.active, #step3.active, #step4.active {
+	display:none;
+}
+/* 代码整理：懒人之家 www.lanrenzhijia.com */

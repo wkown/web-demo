@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>KCIS·猫眼情报云的jquery焦点图</title>
+<link rel='stylesheet' href='css/lanrenzhijia.css' type='text/css' media='all' />
+<script src="js/jquery.tools.min.js" type="text/javascript"></script>
+</head>
+<body style="padding-top:30px;">
+<div class="kcis-content-f">
+  <div class="kcis-know">
+    <div id="kcisKnow"></div>
+    <div class="frame clearfix know-gallery">
+      <div class="frame-top"><em class="frame-top-l"></em><em class="frame-top-r"></em></div>
+      <div class="frame-bottom"><em class="frame-bottom-l"></em><em class="frame-bottom-r"></em></div>
+      <div class="frame-c">
+        <div class="scrolitem-yuqing">
+          <div class="items-yu">
+            <div class="tool item1">
+              <div class="itemcon">
+                <h1>谁在谈论我？谁提到我了？</h1>
+                <br>
+                <p class="f18px"><span class="fB">抓取：</span>从互联网海量的信息中获得所有和我有关，或我关注的信息</p>
+                <p>我们要应对舆情，第一步是要及时、准确、有效地在海量的互联网的信息中，获得和您息息相关的信息了。</p>
+                <br>
+                <p class="fB f18px">您想过没有？这一切应该是自动的</p>
+                <p>KCIS通过结构化的“云书”对“我是谁”进行准确解构，让电脑对互联网信息进行针对性的实时轮询采集，进行一次全网扫描仅需5分钟，第一时间发现与您相关的信息。</p>
+              </div>
+              <div class="step"></div>
+            </div>
+            <div class="tool item2">
+              <div class="itemcon">
+                <h1>主要是哪些观点？重点说什么？</h1>
+                <br>
+                <p class="f18px"><span class="fB">筛选：</span>去芜存菁，及时准确地将重点舆情及需核心关注的信息筛选推送</p>
+                <p>我们抓取了海量的相关信息之后，第二步是要及时、准确的筛选出与您工作相关的信息。</p>
+                <br>
+                <p class="fB f18px">您想过没有？这一切应该是智能的</p>
+                <p>KCIS通过关键词提取和传播覆盖人群的综合计算，从海量的信息中直接“拎”出重点。同时组建了多触点筛选机制和模型，利用人工智能触发并有效学习人脑判断，确保筛选结果更准确。</p>
+              </div>
+              <div class="step"></div>
+            </div>
+            <div class="tool item3">
+              <div class="itemcon">
+                <h1>为什么会这样？会有什么趋势？</h1>
+                <br>
+                <p class="f18px"><span class="fB">分析：</span>事件聚类，统计分析传播路径、形成原因、现状问题及趋势研判</p>
+                <p>我们经过加工后，这些信息就是与您息息相关的，第三步工作就是对这些信息进行分析，全面了解舆情状况。</p>
+                <br>
+                <p class="fB f18px">您想过没有？这一切应该是全面的</p>
+                <p>KCIS通过语义分析自动聚类，将最早信源、关键节点、传播速度、覆盖人群、信息总量等数据集成，提供传播路径分析、舆情等高线等传播学分析。 针对单条信息可以收藏、跟踪、分析和统计。</p>
+              </div>
+              <div class="step"></div>
+            </div>
+            <div class="tool item4">
+              <div class="itemcon">
+                <h1>我该怎么做？</h1>
+                <br>
+                <p class="f18px"><span class="fB">对策：</span>对于可预见的或已发生的机会/危机，做出正确的应对策略</p>
+                <p>我们分析出关键信息之后，第四步就是为您想好对策，做出抉择。</p>
+                <br>
+                <p class="fB f18px">您想过没有？这一切应该是水到渠成的</p>
+                <p>“是谁提到我了?是哪些观点?为什么会这样说?会有什么趋势?“这一系列的问题得到准确答案以后，KCIS帮您回答“我该怎么做？”自然是水到渠成了。</p>
+              </div>
+              <div class="step"></div>
+            </div>
+          </div>
+        </div>
+        <div class="itemsnav"> <a id="step1" class="active"></a> <a id="step2"></a> <a id="step3"></a> <a id="step4"></a> </div>
+      </div>
+      <div class="itemsnav-line"></div>
+    </div>
+  </div>
+</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+	//$(".scrolitem-yuqing").scrollable({size:1,loop:true,clickable:false,navi:'.itemsnav'}).navigator().autoscroll({interval:3000});
+	var scrollb = $('.scrolitem-yuqing').scrollable().navigator({navi:'.itemsnav'});
+	$('.itemsnav').hover(function(){clearInterval(kcisTimer);}, function(){kcisTimer=setInterval('goNextKcis()',8000);});
+	var goScroll = function(id,go){ var scroll = $(".scrolitem-yuqing").scrollable(); scroll.seekTo(go); }
+	$('#step1').click(function(){ goScroll('#step1',0); });
+	$('#step2').click(function(){ goScroll('#step2',1); });
+	$('#step3').click(function(){ goScroll('#step3',2); });
+	$('#step4').click(function(){ goScroll('#step4',3); });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>简单实用的数字幻灯片</title>
+<link href="css/lanrenzhijia.css" rel="stylesheet" type="text/css"></link>
+<script type="text/javascript" src="http://www.lanrenzhijia.com/ajaxjs/1.9.1/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/lanrenzhijia.js"></script>
+ <script language="javascript" type="text/javascript">
+            $(function() {
+                $("#lanrenzhijia").lanrenzhijia({
+                    slideshow_autoplay: 'enable',//enable disable
+                    slideshow_time_interval: 3000,
+                    slideshow_window_background_color: "#fff",
+                    slideshow_window_padding: '1',
+                    slideshow_window_width: '550',
+                    slideshow_window_height: '332',
+                    slideshow_border_size: '1',
+                    slideshow_transition_speed: 500, //'normal','slow','fast' or numeral
+                    slideshow_border_color: 'black',
+                    slideshow_show_button: 'enable',//enable disable
+                    slideshow_show_title: 'disable',//enable disable
+                    slideshow_button_text_color: '#CCC',
+                    slideshow_button_current_text_color: '#000',
+                    slideshow_button_background_color: '#333',
+                    slideshow_button_current_background_color: '#666',
+                    slideshow_button_border_color: '#000',
+                    slideshow_loading_gif: 'images/loading.gif',//loading pic, you can replace it.
+                    slideshow_button_border_size: '1'
+                });
+
+                $("#lanrenzhijia1").lanrenzhijia({
+                    slideshow_autoplay: 'enable',//enable disable
+                    slideshow_time_interval: 5000,
+                    slideshow_transition_speed: 'slow',//'normal','slow','fast' or numeral
+                    slideshow_window_background_color: "#CCFFCC",
+                    slideshow_window_padding: '0',
+                    slideshow_window_width: '550',
+                    slideshow_window_height: '332',
+                    slideshow_button_current_text_color: '#fff',
+                    slideshow_border_size: '0',
+                    slideshow_border_color: '#006600',
+                    slideshow_show_button: 'enable',//enable disable
+                    slideshow_show_title: 'enable',//enable disable
+                    slideshow_button_text_color: '#FFF',
+                    slideshow_button_background_color: '#66CC00',
+                    slideshow_button_current_background_color: '#006600',
+                    slideshow_button_border_color: '#006600',
+                    slideshow_loading_gif: 'images/loading.gif',//loading pic, you can replace it use youself gif.
+                    slideshow_button_border_size: '0'
+                });
+
+            });
+        </script>
+</head>
+<body>       
+<h2>Demo1</h2>
+        <div id="lanrenzhijia" class="lanrenzhijia" style="margin:0 auto;">
+            <ul>
+                <li><a href="http://www.lanrenzhijia.com"><img src="images/lanrenzhijia1.jpg" width="407" height="301" alt="懒人之家"/></a></li>
+                <li><a href="http://www.lanrenzhijia.com"><img src="images/lanrenzhijia2.jpg" width="407" height="301" alt="懒人之家"/></a></li>
+                <li><a href="http://www.lanrenzhijia.com"><img src="images/lanrenzhijia3.jpg" width="407" height="301" alt="懒人之家"/></a></li>
+                <li><a href="http://www.lanrenzhijia.com"><img src="images/lanrenzhijia4.jpg" width="407" height="301" alt="懒人之家"/></a></li>
+            </ul>
+            <ul class="lanrenzhijia_nav">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+            </ul>
+            <div style="clear: both"></div>
+        </div>
+        
+      <h2>Demo2</h2>
+        <div id="lanrenzhijia1" class="lanrenzhijia" style="margin:0 auto;">
+            <ul>
+                <li><a href="http://www.lanrenzhijia.com"><img src="images/lanrenzhijia1.jpg" width="407" height="301" alt="懒人之家"/></a></li>
+                <li><a href="http://www.lanrenzhijia.com"><img src="images/lanrenzhijia2.jpg" width="407" height="301" alt="懒人之家"/></a></li>
+                <li><a href="http://www.lanrenzhijia.com"><img src="images/lanrenzhijia3.jpg" width="407" height="301" alt="懒人之家"/></a></li>
+                <li><a href="http://www.lanrenzhijia.com"><img src="images/lanrenzhijia4.jpg" width="407" height="301" alt="懒人之家"/></a></li>
+            </ul>
+            <ul class="lanrenzhijia_nav">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+            </ul>
+            <div style="clear: both"></div>
+        </div>
+</body>
+</html>

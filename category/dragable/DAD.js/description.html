@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>jQuery拖放插件DAD演示-水平拖拽_dowebok</title>
+<link rel="stylesheet" href="other_css/style.css">
+<style>
+</style>
+</head>
+
+<body>
+<h2>简介</h2>
+<p>DAD 是一款基于 jQuery 的拖拽/拖放插件，它支持常见的水平拖放、垂直拖放、多行拖放、指定拖放区域、回调函数、允许/禁止拖放等等，同时你也可以稍加改造，做成类似垃圾篓、购物车等效果。</p>
+<h2>浏览器兼容</h2>
+<table class="browsers">
+	<thead>
+	<tr>
+		<th><img src="http://cdn.dowebok.com/global/ie.png" alt="IE" /></th>
+		<th><img src="http://cdn.dowebok.com/global/chrome.png" alt="Chrome" /></th>
+		<th><img src="http://cdn.dowebok.com/global/firefox.png" alt="Firefox" /></th>
+		<th><img src="http://cdn.dowebok.com/global/opera.png" alt="Opera" /></th>
+		<th><img src="http://cdn.dowebok.com/global/safari.png" alt="Safari" /></th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>IE11+ ✔</td>
+		<td>Chrome ✔</td>
+		<td>Firefox ✔</td>
+		<td>Opera ✔</td>
+		<td>Safari ✔</td>
+	</tr>
+	</tbody>
+</table>
+<p>很可惜，DAD 在 IE 中只兼容 IE11 版本，在 Opera 中也只支持 Webkit 内核版本。</p>
+<h2>使用方法</h2>
+<h3>1、引入文件</h3>
+<pre>&lt;link rel="stylesheet" href="css/jquery.dad.css"&gt;
+&lt;script src="js/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="js/jquery.dad.min.js"&gt;&lt;/script&gt;</pre>
+<h3>2、HTML</h3>
+<pre>&lt;div class="dowebok"&gt;
+    &lt;div class="item item1"&gt;&lt;span&gt;1&lt;/span&gt;&lt;/div&gt;
+    &lt;div class="item item2"&gt;&lt;span&gt;2&lt;/span&gt;&lt;/div&gt;
+    &lt;div class="item item3"&gt;&lt;span&gt;3&lt;/span&gt;&lt;/div&gt;
+    &lt;div class="item item4"&gt;&lt;span&gt;4&lt;/span&gt;&lt;/div&gt;
+    &lt;div class="item item5"&gt;&lt;span&gt;5&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
+<h3>3、JavaScript</h3>
+<pre>$(function(){
+    $('.dowebok').dad();
+});</pre>
+<h2>配置</h2>
+<table border="1" width="100%">
+	<thead>
+	<tr>
+		<th>属性/方法</th>
+		<th>类型</th>
+		<th>默认值</th>
+		<th>说明</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>target</td>
+		<td>字符串</td>
+		<td>&gt;div</td>
+		<td>要拖放的对象</td>
+	</tr>
+	<tr>
+		<td>draggable</td>
+		<td>布尔值</td>
+		<td>false</td>
+		<td>绑定拖动对象</td>
+	</tr>
+	<tr>
+		<td>placeholder</td>
+		<td>字符串</td>
+		<td>drop here</td>
+		<td>放入区域的文本占位符</td>
+	</tr>
+	<tr>
+		<td>callback</td>
+		<td>布尔值</td>
+		<td>false</td>
+		<td>拖放后的回调函数</td>
+	</tr>
+	<tr>
+		<td>containerClass</td>
+		<td>字符串</td>
+		<td>dad-container</td>
+		<td>为绑定对象增加的 class</td>
+	</tr>
+	<tr>
+		<td>childrenClass</td>
+		<td>字符串</td>
+		<td>dads-children</td>
+		<td>为绑定对象的子对象增加的 class</td>
+	</tr>
+	<tr>
+		<td>cloneClass</td>
+		<td>字符串</td>
+		<td>dads-children-clone</td>
+		<td>为被克隆对象增加的 class</td>
+	</tr>
+	<tr>
+		<td>active</td>
+		<td>布尔值</td>
+		<td>true</td>
+		<td>默认是否可拖放</td>
+	</tr>
+	</tbody>
+</table>
+	<script src="http://cpro.baidustatic.com/cpro/ui/c.js"></script>
+</div>
+<p>DAD 官方主页：<a href="http://www.konsolestudio.com/dad/" target="_blank">http://www.konsolestudio.com/dad/</a></p>
+<p>GitHub 地址：<a href="https://github.com/williammustaffa/jquery.dad.js" target="_blank">https://github.com/williammustaffa/jquery.dad.js</a></p>
+<!-- 以下信息与演示无关，可不必理会 -->
+<style>
+	body { margin: 0; border-left: 200px solid #ccc;}
+
+	h1 { width: 1000px; margin: 40px auto; font: 32px "Microsoft Yahei";}
+	.dowebok { width: 1000px; margin: 0 auto;}
+
+	.menu { position: absolute; left: 0; top: 0; bottom: 0; width: 200px; padding-top: 100px; font-family: Consolas,arial,"宋体"; background-color: #ccc;}
+	.menu a { display: block; height: 40px; margin: 0 0 1px 2px; padding-left: 10px; line-height: 40px; font-size: 14px; color: #333; text-decoration: none;}
+	.menu a:hover { background-color: #eee;}
+	.menu .cur { color: #000; background-color: #fff !important;}
+
+	.vad { margin: 150px 0 10px; font-family: Consolas,arial,宋体,sans-serif; text-align:center;}
+	.vad a { display: inline-block; height: 36px; line-height: 36px; margin: 0 5px; padding: 0 50px; font-size: 14px; text-align:center; color:#eee; text-decoration: none; background-color: #222;}
+	.vad a:hover { color: #fff; background-color: #000;}
+	.thead { width: 728px; height: 90px; margin: 0 auto; border-bottom: 40px solid transparent;}
+</style>
+<div class="menu">
+	<a href="index.html">1、水平拖放</a>
+	<a href="index2.html">2、垂直拖放</a>
+	<a href="index3.html">3、多行拖放</a>
+	<a href="index4.html">4、指定拖动区域</a>
+	<a href="index5.html">5、回调函数</a>
+	<a href="index6.html">6、允许/禁止拖放</a>
+	<a href="index7.html">7、仿垃圾篓</a>
+	<a href="index8.html">8、仿购物车</a>
+</div>
+
+</body>
+</html>

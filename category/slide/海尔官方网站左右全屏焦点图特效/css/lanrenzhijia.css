@@ -1,0 +1,179 @@
+@charset "utf-8";
+/* 代码整理：懒人之家 www.lanrenzhijia.com */
+* {
+	margin:0;
+	padding:0;
+}
+body, button, input, select, textarea, label {
+	font: 12px/1.5 tahoma, arial, \5b8b\4f53, sans-serif;
+	-webkit-text-size-adjust:none; /* fix Chrome 12 px limit */
+	color:#606060;
+}
+img {
+	border:none;
+}
+body {
+	background-image: url(../images/nf_header_bg.png);
+	background-repeat: repeat-x;
+	background-position: 0 0;
+	background-color: #EAEAEC;
+}
+.nf_width_lanrenzhijia {
+	width: 100%;
+	overflow: hidden;
+	min-width: 1000px;
+	zoom: 1;
+	position: relative;
+}
+.nf_lanrenzhijia {
+	width: 1000px;
+	height: 107px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 1010;
+}
+.main_content {
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+	zoom: 1;
+	min-height:400px;
+	_height:400px;
+}
+/* 主视觉 */
+.nf_hp_kv {
+	width: 2000px;
+	height: 456px;
+	margin: 0 -500px;
+	position: relative;
+}
+.nf_hp_kv .window {
+	width: 2000px;
+	height: 456px;
+	overflow: hidden;
+	position: relative;
+}
+.nf_hp_kv .window .kv_item {
+	width: 1000px;
+	height: 456px;
+	overflow: hidden;
+	position: absolute;
+	padding: 0 500px;
+}
+.nf_hp_kv .nav {
+	position: absolute;
+	height: 20px;
+	left: 50%;
+	top: 320px;
+}
+.nf_hp_kv .nav li {
+	width: 20px;
+	height: 20px;
+	float: left;
+	display: inline;
+}
+.nf_hp_kv .nav li a {
+	width: 20px;
+	height: 0px;
+	padding-top: 20px;
+	float: left;
+	display: inline;
+	background-image: url(../images/nf_hp_kv_dot.png);
+	_background-image: url(../images/nf_hp_kv_dot_ie6.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	overflow: hidden;
+}
+.nf_hp_kv .nav li.active a, .nf_hp_kv .nav li a:hover {
+	background-position: -20px 0;
+}
+.nf_hp_kv .btn_prev, .nf_hp_kv .btn_next {
+	width: 32px;
+	height: 78px;
+	position: absolute;
+	top: 110px;
+	box-shadow: 0 0 5px #666;
+	overflow: hidden;
+}
+.nf_hp_kv .btn_prev {
+	left: 0;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.nf_hp_kv .btn_next {
+	right: 0;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.nf_hp_kv .btn_prev a, .nf_hp_kv .btn_next a {
+	width: 32px;
+	height: 0;
+	padding-top: 78px;
+	overflow: hidden;
+	display: block;
+	background-image: url(../images/nf_hp_kv_btn_nav.png);
+}
+.nf_hp_kv .btn_prev a {
+	background-position: 0 0;
+}
+.nf_hp_kv .btn_next a {
+	background-position: right 0;
+}
+.nf_hp_kv .btn_prev a:hover, .nf_hp_kv .btn_next a:hover {
+	opacity: 0.8;
+}
+.nf_hp_kv .btn_prev a:hover {
+}
+.nf_hp_kv .btn_next a:hover {
+}
+/* 3个teaser */
+.nf_hp_teaser_c3x {
+	width: 998px;
+	height: 168px;
+	position: relative;
+	margin-top: -110px;
+	background-color: #fff;
+}
+.nf_hp_teaser_c3x .t_l, .nf_hp_teaser_c3x .t_m, .nf_hp_teaser_c3x .t_r {
+	width: 332px;
+	height: 168px;
+	overflow: hidden;
+	float: left;
+	display: inline;
+	padding-right: 1px;
+	position: relative;
+}
+.nf_hp_teaser_c3x .t_l {
+}
+.nf_hp_teaser_c3x .t_m {
+}
+.nf_hp_teaser_c3x .t_r {
+	background-image: none;
+	padding-right: 0;
+}
+.nf_hp_teaser_c3x .t_item {
+	width: 332px;
+	height: 168px;
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: #fff;
+}
+.nf_hp_teaser_c3x .t_item .event_layer {
+}
+.nf_hp_teaser_c3x .t_item .event_layer h2 {
+	position:absolute;
+	left:20px;
+	top:16px;
+	font-size:14px;
+	color:#303030;
+	font-weight:700;
+}
+.nf_hp_teaser_c3x .t_item .event_layer p {
+	position:absolute;
+	left:20px;
+	top:40px;
+	color:#5f5f5f;
+}
+/* 代码整理：懒人之家 www.lanrenzhijia.com */

@@ -1,0 +1,81 @@
+.focus {
+    width: 544px;
+    height: 273px;
+    position: relative;
+    margin: 10px auto;
+    overflow: hidden;
+}
+
+.focus_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2176px;
+    height: 273px;
+}
+
+.focus_img li {
+    width: 544px;
+    height: 273px;
+    overflow: hidden;
+    float: left;
+    text-align: center;
+    line-height: 273px;
+}
+
+.focus_img li img {
+    width: 524px;
+    height: 273px;
+}
+
+.focus_num {
+    text-align: center;
+}
+
+.focus_num li {
+    display: inline-block;
+    padding-left: 4px;
+}
+
+.focus_num li span {
+    width: 0;
+    height: 0;
+    padding-left: 13px;
+    display: block;
+    height: 13px;
+    background: url(../images/focus.png) 0 0;
+    cursor: pointer;
+}
+
+.focus_num li span.current {
+    background-position: -18px 0;
+}
+
+.personinformation_left .left, .personinformation_left .right {
+    border: none;
+    position: absolute;
+    top: 110px;
+    display: block;
+    width: 30px;
+    cursor: pointer;
+    height: 51px;
+    background: url(../images/focus.png);
+}
+
+.personinformation_left .left {
+    left: 350px;
+    background-position: 0 -15px;
+}
+
+.personinformation_left .right {
+    right: 350px;
+    background-position: -30px -15px;
+}
+
+.personinformation_left .left:hover {
+    background-position: 0 -66px;
+}
+
+.personinformation_left .right:hover {
+    background-position: -30px -66px;
+}
