@@ -12,6 +12,7 @@ $demoRootConfig=[
     'kefu'=>['name'=>'客服示例'],
     'notification'=>['name'=>'提醒示例'],
     'slide'=>['name'=>'幻灯片示例'],
+    'count_down'=>['name'=>'倒计时示例'],
 ];
 $demoConfig['dragable']=[
     ['name'=>'DAD – jQuery拖拽/拖放插件','dir'=>'DAD.js','des'=>''],
@@ -161,4 +162,10 @@ jquery库可以远程调用谷歌的，只需要将lanrenzhijia.js文件导入�
 '],
     ['name'=>'jquery.SuperSlide(基础效果展示]','dir'=>'jquery.SuperSlide.2.1.1/demo.html','des'=>''],
     ['name'=>'无间隙轮播图','dir'=>'无间隙轮播图','des'=>'简洁明了，效果还不错'],
+];
+$demoConfig['count_down']=[
+    ['name'=>'jQuery css3圆形倒数秒计时器代码','dir'=>'jQuery css3圆形倒数秒计时器代码'],
+    ['name'=>'jquery 圆形进度式倒计时','dir'=>'jquery 圆形进度式倒计时'],
+    ['name'=>'tictic-master','dir'=>'tictic-master/demo'],
+    ['name'=>'轻量级jQuery倒计时插件','dir'=>'轻量级jQuery倒计时插件'],
 ];
